@@ -2,7 +2,7 @@ The `xcenter` class in your `style.css` file aligns items to the center horizont
 
 The `ycenter` class in your `style.css` file aligns items to the center verically.
 
-Applying the `xcenter` and `ycenter` classes will align items to the center both horizontally and vertically. 
+Applying both the `xcenter` and `ycenter` classes will align items to the center both horizontally and vertically. 
 
 ![An animated image showing the horizontal x-axis and vertical y-axis with emoji face moving along to highlight the horizontal and vertical centering.](images/center.gif)
     
@@ -13,13 +13,13 @@ filename: index.html
 line_numbers: false
 ---
       <section class="wrap">
-        <div class="tertiary xcenter tile">
+        <div class="xcenter tile tertiary">
           <p>Lorem ipsum</p>
         </div>
-        <div class="secondary ycenter tile">
+        <div class="ycenter tile secondary">
           <p>Lorem ipsum</p>
         </div>
-        <div class="tertiary xcenter ycenter tile">
+        <div class="xcenter ycenter tile tertiary">
           <p>Lorem ipsum</p>
         </div>
       </section>
