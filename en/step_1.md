@@ -1,59 +1,29 @@
-## Introduction
+The `xcenter` class in your `style.css` file aligns items to the center horizontally.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+The `ycenter` class in your `style.css` file aligns items to the center verically.
 
-### What you will make
+Applying the `xcenter` and `ycenter` classes will align items to the center both horizontally and vertically. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+![An animated image showing the horizontal x-axis and vertical y-axis with emoji face moving along to highlight the horizontal and vertical centering.](images/center.gif)
+    
+--- code ---
 ---
-title: What you will need
+language: html
+filename: index.html
+line_numbers: false
 ---
-### Hardware
+      <section class="wrap">
+        <div class="tertiary xcenter tile">
+          <p>Lorem ipsum</p>
+        </div>
+        <div class="secondary ycenter tile">
+          <p>Lorem ipsum</p>
+        </div>
+        <div class="tertiary xcenter ycenter tile">
+          <p>Lorem ipsum</p>
+        </div>
+      </section>
 
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+--- /code ---
+      
+<iframe src="https://trinket.io/embed/html/34d34865bf?toggleCode=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
