@@ -1,6 +1,6 @@
 The `xcenter` class in your `style.css` file aligns items to the center horizontally.
 
-The `ycenter` class in your `style.css` file aligns items to the center verically.
+The `ycenter` class in your `style.css` file aligns items to the center vertically.
 
 Applying both the `xcenter` and `ycenter` classes will align items to the center both horizontally and vertically. 
 
@@ -26,4 +26,4 @@ line_numbers: false
 
 --- /code ---
       
-<iframe src="https://trinket.io/embed/html/34d34865bf?toggleCode=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/html/34d34865bf?toggleCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
