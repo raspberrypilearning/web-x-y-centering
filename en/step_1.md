@@ -1,10 +1,10 @@
-The `xcenter` class in your `style.css` file aligns items to the center horizontally.
+The `xcenter` class in your `style.css` file aligns items to the centre horizontally.
 
-The `ycenter` class in your `style.css` file aligns items to the center vertically.
+The `ycenter` class in your `style.css` file aligns items to the centre vertically.
 
-Applying both the `xcenter` and `ycenter` classes will align items to the center both horizontally and vertically. 
+If you apply both the `xcenter` and `ycenter` classes, you align items to the centre both horizontally and vertically. 
 
-![An animated image showing the horizontal x-axis and vertical y-axis with emoji face moving along to highlight the horizontal and vertical centering.](images/center.gif)
+![The horizontal x-axis and vertical y-axis with emoji faces moving along to highlight the horizontal and vertical centring.](images/center.gif)
     
 --- code ---
 ---
@@ -25,5 +25,6 @@ line_numbers: false
       </section>
 
 --- /code ---
-      
-<iframe src="https://trinket.io/embed/html/34d34865bf?toggleCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/web-x-y-center" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
