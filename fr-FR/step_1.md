@@ -1,10 +1,10 @@
-The `xcenter` class in your `style.css` file aligns items to the centre horizontally.
+La classe `xcenter` dans ton fichier `style.css` aligne les éléments au centre horizontalement.
 
-The `ycenter` class in your `style.css` file aligns items to the centre vertically.
+La classe `ycenter` dans ton fichier `style.css` aligne les éléments au centre verticalement.
 
-If you apply both the `xcenter` and `ycenter` classes, you align items to the centre both horizontally and vertically.
+Si tu appliques les classes `xcenter` et `ycenter`, tu alignes les éléments au centre à la fois horizontalement et verticalement.
 
-![The horizontal x-axis and vertical y-axis with emoji faces moving along to highlight the horizontal and vertical centring.](images/center.gif)
+![L'axe x horizontal et l'axe y vertical avec les visages emoji se déplaçant pour mettre en évidence le centrage horizontal et vertical.](images/center.gif)
 
 ## --- code ---
 
