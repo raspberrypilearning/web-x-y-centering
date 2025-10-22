@@ -1,4 +1,4 @@
-/* Colour pairings */
+/* 颜色搭配 */
 
 .primary {
   background: var(--primary);
@@ -21,12 +21,12 @@
 }
 
 
-/* Apply everywhere */
+/* 适用于所有地方 */
 
 * {
   margin: 0rem;
   padding: 0rem;
-  box-sizing: border-box; /* Padding and border don't make a box bigger */
+  box-sizing: border-box; /* 填充和边框不会使盒子变大 */
 }
 
 html,
@@ -36,89 +36,89 @@ body {
   background: var(--page);
   color: var(--onpage);
   font: var(--body-font);
-  min-height: 100vh; /* Make the content fill the page so the footer is at the bottom */
+  min-height: 100vh; /* 使内容填满页面，使页脚位于页面底部 */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* add a background image to body */
+/* 向 body 添加背景图片 */
 
 body {
-  /*background-image: url('name.jpg');*/ /* Uncomment and change filename to add a background image */
-  /*background-repeat: repeat;*/ /* Make the image repeat */
-  /*background-size: cover;*/ /* Make the image cover the whole container */
+  /*background-image: url('name.jpg');*/ /*取消注释并更改文件名以添加背景图像*/
+  /*background-repeat: repeat;*/ /* 使图像重复 */
+  /*background-size: cover;*/ /*使图像覆盖整个容器*/
 }
 
-/* The main content of the page between the header and footer */
+/* 页眉和页脚之间的页面主要内容 */
 main {
-  background: var(--primary); /* Colour the background */
-  color: var(--onprimary); /* Colour the text */
-  margin: 0 auto; /* Center if the browser is really wide */
-  min-width: 25rem; /* Don't let the content get too narrow */
-  max-width: 70rem; /*  Don't let the content get too wide */
+  background: var(--primary); /* 背景颜色 */
+  color: var(--onprimary); /*为文本着色*/
+  margin: 0 auto; /* 当浏览器足够宽时居中显示 */
+  min-width: 25rem; /* 不要让内容变得太窄 */
+  max-width: 70rem; /* 不要让内容变得太宽 */
   padding: 0;
-  padding-top: 0.5rem; /* Padding at the top */
-  margin-bottom: 1em; /* Gap before the footer */
+  padding-top: 0.5rem; /* 顶部填充 */
+  margin-bottom: 1em; /* 页脚前的间隙 */
 }
 
-/* Header and footer element styles */
+/* 页眉和页脚元素样式 */
 
 header,
 footer {
   text-align: center;
-  width: 100%; /* Fill the full width of the window */
-  margin: 0; /* Remove the default margin */
+  width: 100%; /* 填充窗口的整个宽度 */
+  margin: 0; /* 删除默认边距 */
   min-height: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-/* Section styles */
+/* 部分样式 */
 
 section {
   padding: 1rem 2rem;
   margin: 1rem auto;
 }
 
-/* Border styles */
+/* 边框样式 */
 
 .border-bottom {
-  border-bottom: 20px solid var(--detail); /* Add a solid */
+  border-bottom: 20px solid var(--detail); /* 添加实线 */
 }
 
 .border-top {
-  border-top: 10px solid var(--detail2); /* Add a solid line above the footer */
+  border-top: 10px solid var(--detail2); /* 在页脚上方添加一条实线 */
 }
 
-/* Add a transparent effect */
+/* 添加透明效果 */
 
 .transparent {
   opacity: 0.95;
 }
 
-/* Styles just for h1 elements */
+/* 仅适用于 h1 元素的样式 */
 
 h1 {
-  font: var(--header-font); /* Font style stored in the header-font variable */
+  font: var(--header-font); /* 存储在 header-font 变量中的字体样式 */
   padding: 2rem;
-  margin: 0; /* Center if the browser is really wide */
+  margin: 0; /* 当浏览器足够宽时居中显示 */
 }
 
-/* Styles just for h2 elements */
+/* 仅适用于 h2 元素的样式 */
 
 h2 {
-  font: var(--title-font); /* Font style stored in the title-font variable */
+  font: var(--title-font); /* 字体样式存储在 title-font 变量中 */
 }
 
-/* Highlight key words in bold and apply an alternative text colour */
+/* 以粗体突出显示关键词并应用替代文本颜色 */
 
 strong {
-  color: var(--detail2); /* Text colour stored in the caption variable */
-  font-weight: bold; /* Makes text weight stronger than the default*/
+  color: var(--detail2); /* 存储在标题变量中的文本颜色 */
+  font-weight: bold; /*使文本粗细比默认的更强*/
 }
 
-/* Style for ordered and unordered lists */
+/* 有序列表和无序列表的样式 */
 
 ol,
 ul {
@@ -127,18 +127,18 @@ ul {
   padding-left: 2rem;
 }
 
-/* Padding around paragraphs */
+/* 段落周围的填充 */
 
 p {
   padding: 0.25rem 0.5rem;
 }
 
-/* Style for links */
+/* 链接样式 */
 
 a:link,
 a:visited {
   font-weight: bold;
-  color: inherit; /* Use the colour of the parent element */
+  color: inherit; /*使用父元素的颜色*/
 }
 
 .xcenter {
@@ -151,10 +151,10 @@ a:visited {
   flex-flow: column;
 }
 
-/* Styles just for the .wrap class */
+/* 仅适用于 .wrap 类的样式 */
 
 .wrap {
-  /* Make content wrap over mutiple rows */
+  /* 使内容换行 */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -162,7 +162,7 @@ a:visited {
   box-sizing: border-box;
 }
 
-/* For creating fancy boxes */
+/* 用于创建精美的盒子 */
 
 .dashed-border {
   border: 0.25rem dashed var(--detail2);
@@ -172,14 +172,14 @@ a:visited {
   border: 0.25rem solid var(--detail2);
 }
 
-/* Styles for the div tags that are inside a .wrap class */
+/* .wrap 类内的 div 标签的样式 */
 
 .wrap > div {
   width: 14rem;
   padding: 0rem;
 }
 
-/* Styles for the img tags that are inside a .wrap class */
+/* .wrap 类中的 img 标签的样式 */
 
 .wrap > img {
   width: 14rem;
@@ -187,7 +187,7 @@ a:visited {
   padding: 0rem;
 }
 
-/* Styles for the p tags that are inside a .wrap class */
+/* .wrap 类内的 p 标签的样式 */
 
 .wrap > p,
 .wrap > span {
@@ -196,14 +196,14 @@ a:visited {
   padding: 0rem;
 }
 
-/* Specific styles for this project */
+/* 该项目的特定样式 */
 
 .bigfont {
   font-size: 3rem;
 }
 
 .hugefont {
-  /* Used to make a large emoji */
+  /* 用于制作一个大表情符号 */
   font-size: 6rem;
   text-align: center;
   padding: 1rem;
@@ -230,7 +230,7 @@ cite {
   font-size: small;
 }
 
-/* Specific styles for this project */
+/* 该项目的特定样式 */
 
 .tile {
   height: 9.4rem;
@@ -259,7 +259,7 @@ cite {
 }
 
 .shadow {
-   box-shadow: 5px 5px 3px 0px #888888; /* right and bottom shadow size, blur, spread and colour */
+   box-shadow: 5px 5px 3px 0px #888888; /* 右侧和底部阴影大小、模糊、扩散和颜色 */
    /*box-shadow: 5px 5px 4px 2px var(--detail);*/
 }
 
