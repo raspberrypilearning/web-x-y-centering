@@ -1,0 +1,128 @@
+.spinme {
+  animation: rotate-center linear 8s 2; /* 以线性时间（始终保持相同的速度）运行“旋转中心”动画八秒。 运行动画两次。 */
+  display: inline-block; /* 重要，因此动画元素不会拆分到新行 */
+}
+
+@keyframes rotate-center {
+  /* 旋转动画代码 */
+  0% {
+    /* 从 0 度旋转到 360 度 */
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bounceme {
+  animation: bounce ease 2s 3; /* 以缓动时间（缓慢开始和结束）运行“弹跳”动画，持续两秒。 运行动画三次。 */
+  display: inline-block;
+}
+
+@keyframes bounce {
+  /* 弹跳动画代码 */
+  0% {
+    transform: scale(1, 1) translateY(0); /* 起始位置和实际尺寸 */
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0); /* 调整宽度以实现预弹缩压缩效果，同时调整高度以实现收缩效果 */
+  }
+  30% {
+    transform: scale(1, 1) translateY(-6rem); /* 恢复到实际大小，并将表情符号从当前位置向上移动 100 像素。 */
+  }
+  50% {
+    transform: scale(1, 1) translateY(0); /* 将表情符号移回初始位置 */
+  }
+}
+
+.scaleme {
+  animation: scale ease 2s infinite; /* 以缓动时间（起始和结束时缓慢）运行“缩放”动画，持续两秒。 永远运行动画。 */
+  display: inline-block;
+}
+
+@keyframes scale {
+  /* 缩放动画代码 */
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.1, 1.1);
+  }
+  40% {
+    transform: scale(1.2, 1.2);
+  }
+  60% {
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    transform: scale(1, 1);
+  }
+}
+
+.rollmeleft {
+  animation: rollleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollleft {
+  /* 滚动动画代码 */
+  from {
+    transform: translate(-60vw) rotate(0deg);
+  }
+
+  to {
+    transform: translate(0vw) rotate(360deg);
+  }
+}
+
+.rollmeright {
+  animation: rollright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollright {
+  /* 滚动动画代码 */
+  from {
+    transform: translate(60vw) rotate(360deg);
+  }
+
+  to {
+    transform: translate(0vw) rotate(00deg);
+  }
+}
+
+.movemeleft {
+  animation: moveleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveleft {
+  /* 移动动画代码 */
+  from {
+    transform: translate(-60vw);
+  }
+
+  to {
+    transform: translate(0vw);
+  }
+}
+
+.movemeright {
+  animation: moveright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveright {
+  /* 移动动画代码 */
+  from {
+    transform: translate(60vw);
+  }
+
+  to {
+    transform: translate(0vw);
+  }
+}
+
+.flipme {
+  transform: rotateY(180deg);
+}

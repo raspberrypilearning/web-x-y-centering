@@ -1,0 +1,296 @@
+/* 颜色搭配 */
+
+.primary {
+  background: var(--primary);
+  color: var(--onprimary);
+}
+
+.secondary {
+  background: var(--secondary);
+  color: var(--onsecondary);
+}
+
+.tertiary {
+  background: var(--tertiary);
+  color: var(--ontertiary);
+}
+
+.page {
+  background: var(--page);
+  color: var(--onpage);
+}
+
+
+/* 适用于所有地方 */
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box; /* 填充和边框不会使盒子变大 */
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0rem auto;
+  background: var(--page);
+  color: var(--onpage);
+  font: var(--body-font);
+  min-height: 100vh; /* 使内容填满页面，使页脚位于页面底部 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 向 body 添加背景图片 */
+
+body {
+  /*background-image: url('name.jpg');*/ /*取消注释并更改文件名以添加背景图像*/
+  /*background-repeat: repeat;*/ /* 使图像重复 */
+  /*background-size: cover;*/ /*使图像覆盖整个容器*/
+}
+
+/* 页眉和页脚之间的页面主要内容 */
+main {
+  background: var(--primary); /* 背景颜色 */
+  color: var(--onprimary); /*为文本着色*/
+  margin: 0 auto; /* 当浏览器足够宽时居中显示 */
+  min-width: 25rem; /* 不要让内容变得太窄 */
+  max-width: 70rem; /* 不要让内容变得太宽 */
+  padding: 0;
+  padding-top: 0.5rem; /* 顶部填充 */
+  margin-bottom: 1em; /* 页脚前的间隙 */
+}
+
+/* 页眉和页脚元素样式 */
+
+header,
+footer {
+  text-align: center;
+  width: 100%; /* 填充窗口的整个宽度 */
+  margin: 0; /* 删除默认边距 */
+  min-height: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* 部分样式 */
+
+section {
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+}
+
+/* 边框样式 */
+
+.border-bottom {
+  border-bottom: 20px solid var(--detail); /* 添加实线 */
+}
+
+.border-top {
+  border-top: 10px solid var(--detail2); /* 在页脚上方添加一条实线 */
+}
+
+/* 添加透明效果 */
+
+.transparent {
+  opacity: 0.95;
+}
+
+/* 仅适用于 h1 元素的样式 */
+
+h1 {
+  font: var(--header-font); /* 存储在 header-font 变量中的字体样式 */
+  padding: 2rem;
+  margin: 0; /* 当浏览器足够宽时居中显示 */
+}
+
+/* 仅适用于 h2 元素的样式 */
+
+h2 {
+  font: var(--title-font); /* 字体样式存储在 title-font 变量中 */
+}
+
+/* 以粗体突出显示关键词并应用替代文本颜色 */
+
+strong {
+  color: var(--detail2); /* 存储在标题变量中的文本颜色 */
+  font-weight: bold; /*使文本粗细比默认的更强*/
+}
+
+/* 有序列表和无序列表的样式 */
+
+ol,
+ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+/* 段落周围的填充 */
+
+p {
+  padding: 0.25rem 0.5rem;
+}
+
+/* 链接样式 */
+
+a:link,
+a:visited {
+  font-weight: bold;
+  color: inherit; /*使用父元素的颜色*/
+}
+
+.xcenter {
+  text-align: center;
+}
+
+.ycenter {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/* 仅适用于 .wrap 类的样式 */
+
+.wrap {
+  /* 使内容换行 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* 用于创建精美的盒子 */
+
+.dashed-border {
+  border: 0.25rem dashed var(--detail2);
+}
+
+.solid-border {
+  border: 0.25rem solid var(--detail2);
+}
+
+/* .wrap 类内的 div 标签的样式 */
+
+.wrap > div {
+  width: 14rem;
+  padding: 0rem;
+}
+
+/* .wrap 类中的 img 标签的样式 */
+
+.wrap > img {
+  width: 14rem;
+  display: block;
+  padding: 0rem;
+}
+
+/* .wrap 类内的 p 标签的样式 */
+
+.wrap > p,
+.wrap > span {
+  width: 14rem;
+  display: block;
+  padding: 0rem;
+}
+
+/* 该项目的特定样式 */
+
+.bigfont {
+  font-size: 3rem;
+}
+
+.hugefont {
+  /* 用于制作一个大表情符号 */
+  font-size: 6rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrap .narrow {
+  width: 10rem;
+}
+
+.wrap .wide {
+  width: 20rem;
+}
+
+blockquote {
+  font: var(--quote-font);
+  color: var(--detail);
+  text-align: center;
+  padding: 0rem;
+  max-width: 25rem;
+}
+
+cite {
+  color: var(--detail);
+  font-size: small;
+}
+
+/* 该项目的特定样式 */
+
+.tile {
+  height: 9.4rem;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.gradient1 {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--detail)
+  );
+  color: var(--onsecondary);
+}
+
+.gradient2 {
+  background-image: linear-gradient(
+    to top right,
+    var(--tertiary),
+    var(--detail2)
+  );
+  color: var(--ontertiary);
+}
+
+.shadow {
+   box-shadow: 5px 5px 3px 0px #888888; /* 右侧和底部阴影大小、模糊、扩散和颜色 */
+   /*box-shadow: 5px 5px 4px 2px var(--detail);*/
+}
+
+.wrap .card {
+  width: 10rem;
+  height: 10rem;
+  border: 0.1rem solid transparent;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 60rem;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card p {
+  padding: 0.5rem;
+}
+
