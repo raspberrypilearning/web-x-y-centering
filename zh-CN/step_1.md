@@ -24,6 +24,6 @@ line_numbers: false
         </div>
       </section>
 
---- /code --
+--- /code ---
 
 <iframe src="https://editor.raspberrypi.org/zh-CN/embed/viewer/web-x-y-center" width="400" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
